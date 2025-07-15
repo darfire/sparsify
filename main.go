@@ -24,7 +24,7 @@ func main() {
 	var progress bool
 	var inFile *os.File
 
-	flag.IntVar(&blockSize, "block-size", 512, "Block size")
+	flag.IntVar(&blockSize, "block-size", 65536, "Block size")
 	flag.StringVar(&input, "input", "-", "Input file name")
 	flag.StringVar(&output, "output", "output", "Output file name")
 	flag.BoolVar(&debug, "debug", false, "Debug mode")
